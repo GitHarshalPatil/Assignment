@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            position: absolute;
+            top: 20%;
+            border-radius: 5px;
+            left: 40%;
+            border: 2px solid grey;
+            padding: 5px;
+            background-color: rgb(77, 66, 66);
+        }
+
+        .input {
+            border-radius: 5px;
+        }
+
+        .input input {
+            padding: 5px 10px 5px 10px;
+            width: 200px;
+            margin-left: 5px;
+            text-align: right;
+            font-size: 24px;
+        }
+
+        .button input {
+            border: none;
+            border-radius: 3px;
+            margin: 10px;
+            padding: 10px;
+            width: 50px;
+            box-shadow: 3px 5px 13px 5px rgb(116, 115, 119);
+            transition: 0.2s;
+        }
+
+        #clear {
+            border: none;
+            border-radius: 3px;
+            width: 50px;
+            box-shadow: 3px 5px 13px 5px rgb(116, 115, 119);
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <form name="name">
+        <div class="main">
+            <div class="input">
+                <input type="text" placeholder="0" id="change" name="No">
+                <input type="button" value="AC" id="clear" onclick="No.value = ' ' "  ><br><br>
+            </div>
+            <!-- <input type="text" name="No-2" id="no-2" value=" "><br><br>
+         <input type="text" name="Ans" id="Result" value=" "><br><br> -->
+            <div class="button">
+                <input type="button" value="9" onclick="No.value+='9'">
+                <input type="button" value="8" onclick="No.value+='8'">
+                <input type="button" value="7" onclick="No.value+='7'">
+                <input type="button" value="+" onclick="No.value+='+'"> <br>
+                <input type="button" value="6" onclick="No.value+='6'">
+                <input type="button" value="5" onclick="No.value+='5'">
+                <input type="button" value="4" onclick="No.value+='4'">
+                <input type="button" value="-" onclick="No.value+='-'"> <br>
+                <input type="button" value="3" onclick="No.value+='3'">
+                <input type="button" value="2" onclick="No.value+='2'">
+                <input type="button" value="1" onclick="No.value+='1'">
+                <input type="button" value="/" onclick="No.value+='/'"> <br>
+                <input type="button" value="0" onclick="No.value+='0'">
+                <input type="button" value="." onclick="No.value+='.'">
+                <input type="button" value="=" onclick="No.value=eval(No.value)">
+                <input type="button" value="*" onclick="No.value+='*'">
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>

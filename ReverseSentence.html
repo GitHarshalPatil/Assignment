@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reverseWords(sentence) {
+  let reversed = '', word = '';
+
+  for (let char of sentence) {
+    if (char !== ' ') {
+      word = char + word; //  make word in reverse
+    } else {
+      reversed += word + ' '; // Add the reversed word and a space
+      word = '';
+    }
+  }
+
+  reversed += word; // Add the last word (no trailing space)
+
+  return reversed;
+}
+
+// Example usage:
+const inputSentence = "This is a sunny day";
+const reversedSentence = reverseWords(inputSentence);
+console.log(reversedSentence);
+    </script>
+</body>
+</html>
